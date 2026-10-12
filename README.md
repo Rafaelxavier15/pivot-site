@@ -1,15 +1,5 @@
 # PIVOT
 
-Site institucional da PIVOT, escola profissionalizante de Jundiaí (SP).
-
-## Como abrir
-
-1. Abra a pasta no VS Code.
-2. Instale a extensão Live Server.
-3. Clique com o botão direito em `index.html` e escolha "Open with Live Server".
-
-Também funciona abrindo o arquivo `index.html` direto no navegador.
-
 ## Estrutura
 
 ```
@@ -39,6 +29,18 @@ img/
 - Cadastro e login com e-mail e senha
 - Área "Minha conta" com foto de perfil, dados pessoais e cursos de interesse
 - Assistente virtual PVT IA para sugerir cursos
+
+## Ferramentas Utilizadas
+
+- HTML5: Para estrutura das páginas.
+- CSS3: Identidade visual, cores e animações.
+- JavaScript: Foi utilizado para navegações entre páginas e para assistente virtual.
+- SVG: Ícones, ilustrações e elementos gráficos.
+- LocalStorage e Web Crypto API: Para armazenamento dos dados no navegador e proteção de senhas.
+
+## Uso de IA
+
+Foi utilizada inteligência artificial como ferramenta de apoio na elaboração dos textos, das imagens e dos elementos gráficos, e como auxílio no desenvolvimento do código.
 
 ## Observações
 
