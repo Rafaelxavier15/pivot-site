@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="PIVOT — escola profissionalizante de Jundiaí. Da escola ao mercado de trabalho.">
+    <meta name="theme-color" content="#1f5cff">
+    <title>PIVOT — Formação profissional para o seu próximo passo</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="chev" viewBox="0 0 160 40">
+        <g fill="currentColor">
+          <path d="M0 0H12L32 20L12 40H0L20 20Z"/>
+          <path d="M32 0H44L64 20L44 40H32L52 20Z"/>
+          <path d="M64 0H76L96 20L76 40H64L84 20Z"/>
+          <path d="M96 0H108L128 20L108 40H96L116 20Z"/>
+          <path d="M128 0H140L160 20L140 40H128L148 20Z"/>
+        </g>
+      </symbol>
+      <symbol id="star" viewBox="0 0 40 40">
+        <path fill="currentColor" d="M20 0C22 14 26 18 40 20C26 22 22 26 20 40C18 26 14 22 0 20C14 18 18 14 20 0Z"/>
+      </symbol>
+      <symbol id="tile" viewBox="0 0 80 80">
+        <rect width="80" height="80" rx="20" fill="currentColor"/>
+        <path d="M26 54L54 26M31 26H54V49" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="bot" viewBox="0 0 100 110">
+        <g stroke-linecap="round" stroke-linejoin="round">
+          <path d="M50 22V10" stroke="#1f5cff" stroke-width="5" fill="none"/>
+          <circle cx="50" cy="8" r="6" fill="#f2e60f" stroke="#1f5cff" stroke-width="4"/>
+          <rect x="6" y="42" width="12" height="24" rx="6" fill="#8fb0ff"/>
+          <rect x="82" y="42" width="12" height="24" rx="6" fill="#8fb0ff"/>
+          <rect x="14" y="22" width="72" height="54" rx="20" fill="#1f5cff"/>
+          <rect x="24" y="34" width="52" height="30" rx="15" fill="#fff"/>
+          <circle cx="39" cy="49" r="6" fill="#1f5cff"/>
+          <circle cx="61" cy="49" r="6" fill="#1f5cff"/>
+          <rect x="28" y="80" width="44" height="26" rx="10" fill="#1f5cff"/>
+          <circle cx="50" cy="93" r="5" fill="#f2e60f"/>
+        </g>
+      </symbol>
+      <symbol id="rib2" viewBox="0 0 200 300">
+        <mask id="rbm">
+          <rect width="200" height="300" fill="#fff"/>
+          <polygon points="36,270 57.4,257.4 64,282 70,296 30,296" fill="#000"/>
+          <polygon points="164,270 142.6,257.4 136,282 130,296 170,296" fill="#000"/>
+        </mask>
+        <g mask="url(#rbm)" fill="none" stroke-linejoin="round">
+          <path d="M50 276L100 150C122 96 140 60 122 34C112 20 92 18 80 28" stroke="#ec4a98" stroke-width="30"/>
+          <path d="M80 28C66 40 64 56 68 66C72 96 90 120 100 150L150 276" stroke="#ff6fb5" stroke-width="30"/>
+          <path d="M76 34C68 46 69 58 72 68" stroke="#ffb3da" stroke-width="6" stroke-linecap="round"/>
+        </g>
+      </symbol>
+      <symbol id="case" viewBox="0 0 100 100">
+        <path d="M34 34V24a8 8 0 0 1 8-8h16a8 8 0 0 1 8 8v10" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+        <rect x="6" y="32" width="88" height="56" rx="14" fill="currentColor"/>
+        <path d="M6 58H94" stroke="var(--ac,#f2e60f)" stroke-width="4" opacity=".55"/>
+        <rect x="41" y="52" width="18" height="16" rx="5" fill="var(--ac,#f2e60f)"/>
+      </symbol>
+      <symbol id="book" viewBox="0 0 100 100">
+        <path d="M50 24C38 14 20 14 5 20V78C20 72 38 72 50 82Z" fill="currentColor"/>
+        <path d="M50 24C62 14 80 14 95 20V78C80 72 62 72 50 82Z" fill="currentColor" opacity=".82"/>
+        <path d="M16 36Q28 33 40 38M16 48Q28 45 40 50M16 60Q28 57 40 62" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="4" stroke-linecap="round"/>
+        <path d="M60 38Q72 33 84 38M60 50Q72 45 84 50M60 62Q72 57 84 62" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="cap" viewBox="0 0 100 100">
+        <path d="M50 18L96 40L50 62L4 40Z" fill="currentColor"/>
+        <path d="M22 54V70C22 78 36 84 50 84C64 84 78 78 78 70V54L50 67Z" fill="currentColor" opacity=".85"/>
+        <circle cx="50" cy="40" r="6" fill="var(--ac,#f2e60f)"/>
+        <path d="M50 40L88 46V68" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="82" y="64" width="12" height="20" rx="5" fill="currentColor"/>
+        <rect x="82" y="68" width="12" height="4" fill="var(--ac,#f2e60f)"/>
+      </symbol>
+      <symbol id="bulb" viewBox="0 0 100 100">
+        <path d="M50 6C30 6 16 20 16 38C16 52 24 58 30 68H70C76 58 84 52 84 38C84 20 70 6 50 6Z" fill="currentColor"/>
+        <rect x="33" y="74" width="34" height="10" rx="5" fill="currentColor"/>
+        <rect x="39" y="88" width="22" height="9" rx="4.5" fill="currentColor"/>
+        <path d="M30 36Q33 22 46 16" fill="none" stroke="var(--ac,#fff)" stroke-width="6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="cert" viewBox="0 0 100 100">
+        <rect x="4" y="16" width="92" height="62" rx="10" fill="currentColor"/>
+        <path d="M18 34H60M18 46H50M18 58H42" stroke="var(--ac,#f2e60f)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M72 80L66 96L78 90L90 96L84 80Z" fill="var(--ac,#f2e60f)" opacity=".8"/>
+        <circle cx="78" cy="62" r="13" fill="var(--ac,#f2e60f)"/>
+        <path d="M72 62L76 66L84 57" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="laptop" viewBox="0 0 100 100">
+        <rect x="16" y="16" width="68" height="50" rx="8" fill="currentColor"/>
+        <rect x="23" y="23" width="54" height="36" rx="4" fill="var(--ac,#f2e60f)" opacity=".28"/>
+        <path d="M30 50L44 38L52 44L68 28M58 28H68V38" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 74H96L90 84Q89 86 86 86H14Q11 86 10 84Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="chart" viewBox="0 0 100 100">
+        <rect x="10" y="58" width="18" height="32" rx="5" fill="currentColor"/>
+        <rect x="38" y="42" width="18" height="48" rx="5" fill="currentColor"/>
+        <rect x="66" y="26" width="18" height="64" rx="5" fill="currentColor"/>
+        <path d="M14 40L40 22L56 30L86 8M72 8H86V22" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="bolt" viewBox="0 0 100 100">
+        <path d="M58 4L20 56H46L38 96L80 40H54Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="palette" viewBox="0 0 100 100">
+        <path d="M50 8C26 8 8 26 8 50C8 74 26 92 48 92C58 92 62 86 58 80C54 72 60 66 68 66H80C88 66 92 60 92 52C92 28 74 8 50 8Z" fill="currentColor"/>
+        <g fill="var(--ac,#f2e60f)">
+          <circle cx="30" cy="46" r="7"/>
+          <circle cx="46" cy="28" r="7"/>
+          <circle cx="68" cy="30" r="7"/>
+          <circle cx="78" cy="50" r="7"/>
+        </g>
+      </symbol>
+      <symbol id="pkg" viewBox="0 0 100 100">
+        <path d="M8 30L50 10L92 30V72L50 92L8 72Z" fill="currentColor"/>
+        <path d="M8 30L50 50L92 30L50 10Z" fill="currentColor" opacity=".7"/>
+        <path d="M50 50V92" stroke="var(--ac,#f2e60f)" stroke-width="7"/>
+        <path d="M29 20L71 40V54" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="mega" viewBox="0 0 100 100">
+        <path d="M10 38H32L78 14V86L32 62H10Z" fill="currentColor"/>
+        <path d="M24 64L30 90H44L40 66Z" fill="currentColor"/>
+        <path d="M86 36Q96 50 86 64" fill="none" stroke="var(--ac,#f2e60f)" stroke-width="6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="usr" viewBox="0 0 100 100">
+        <circle cx="50" cy="36" r="20" fill="currentColor"/>
+        <path d="M12 100C14 74 30 62 50 62C70 62 86 74 88 100Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="wa" viewBox="0 0 100 100">
+        <path d="M50 8C27 8 8 27 8 50c0 8 2 15 6 22L8 92l21-6c7 4 14 6 21 6 23 0 42-19 42-42S73 8 50 8z" fill="currentColor"/>
+        <path d="M36 30c-3 0-7 3-7 9 0 12 15 30 33 31 6 0 10-4 10-8 0-1-1-2-2-3l-9-4c-1 0-2 0-3 1l-3 3c-8-3-13-9-15-15l3-3c1-1 1-2 0-3l-4-9c-1-1-2-1-3-1z" fill="var(--ac,#fff)"/>
+      </symbol>
+      <symbol id="ig" viewBox="0 0 100 100">
+        <rect x="12" y="12" width="76" height="76" rx="22" fill="none" stroke="currentColor" stroke-width="9"/>
+        <circle cx="50" cy="50" r="18" fill="none" stroke="currentColor" stroke-width="9"/>
+        <circle cx="72" cy="28" r="5.5" fill="currentColor"/>
+      </symbol>
+      <symbol id="xx" viewBox="0 0 100 100">
+        <path d="M14 12H36L86 88H64Z" fill="currentColor"/>
+        <path d="M82 12L56 44M18 88L44 56" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="yt" viewBox="0 0 100 100">
+        <rect x="6" y="22" width="88" height="56" rx="18" fill="currentColor"/>
+        <path d="M42 36L66 50L42 64Z" fill="var(--ac,#fff)"/>
+      </symbol>
+      <symbol id="pump" viewBox="0 0 200 170">
+        <path d="M92 30C90 14 98 6 112 4L118 14C108 18 108 26 110 36Z" fill="#6a3fb0"/>
+        <ellipse cx="52" cy="100" rx="48" ry="58" fill="#e8650a"/>
+        <ellipse cx="148" cy="100" rx="48" ry="58" fill="#e8650a"/>
+        <ellipse cx="76" cy="98" rx="50" ry="62" fill="#ff7a00"/>
+        <ellipse cx="124" cy="98" rx="50" ry="62" fill="#ff7a00"/>
+        <ellipse cx="100" cy="98" rx="44" ry="64" fill="#ff9a2e"/>
+        <path d="M74 40Q60 98 76 154M126 40Q140 98 124 154" fill="none" stroke="#d9560a" stroke-width="3" stroke-linecap="round"/>
+        <g fill="#ffd23f" stroke="#ffd23f" stroke-width="4" stroke-linejoin="round">
+          <path d="M58 90L86 88L70 68Z"/>
+          <path d="M114 88L142 90L130 68Z"/>
+          <path d="M56 112L72 124L86 112L100 126L114 112L128 124L144 112L138 136Q100 154 62 136Z"/>
+        </g>
+      </symbol>
+      <symbol id="gh" viewBox="0 0 120 160">
+        <path d="M20 150V62C20 26 44 8 60 8C76 8 100 26 100 62V150L88 138L74 152L60 138L46 152L32 138Z" fill="#f6f0ff"/>
+        <path d="M100 62C100 26 76 8 60 8C84 14 90 40 88 74L88 138L100 150Z" fill="#dccbff"/>
+        <path d="M22 84Q2 74 6 52Q20 56 26 72Z" fill="#f6f0ff"/>
+        <path d="M98 84Q118 74 114 52Q100 56 94 72Z" fill="#f6f0ff"/>
+        <ellipse cx="46" cy="62" rx="7" ry="9" fill="#4b1d8f"/>
+        <ellipse cx="74" cy="62" rx="7" ry="9" fill="#4b1d8f"/>
+        <path d="M48 84Q60 104 72 84Q60 90 48 84Z" fill="#4b1d8f"/>
+      </symbol>
+      <symbol id="bt" viewBox="0 0 120 56">
+        <path d="M60 18C50 4 30 2 4 12C14 16 16 24 14 32C22 26 30 28 34 38C42 30 52 32 60 44C68 32 78 30 86 38C90 28 98 26 106 32C104 24 106 16 116 12C90 2 70 4 60 18Z" fill="#2a0f55"/>
+        <path d="M54 18L56 8L60 14L64 8L66 18Z" fill="#2a0f55"/>
+      </symbol>
+      <symbol id="ht" viewBox="0 0 140 120">
+        <ellipse cx="70" cy="100" rx="64" ry="14" fill="#7a3fd1"/>
+        <path d="M36 98C50 70 58 40 96 4C86 36 98 68 104 98Z" fill="#9b5cf0"/>
+        <path d="M40 84Q70 96 102 84L104 98Q70 110 36 98Z" fill="#ff7a00"/>
+        <rect x="62" y="88" width="16" height="14" rx="3" fill="#ffd23f"/>
+      </symbol>
+      <symbol id="sp" viewBox="-4 0 48 120">
+        <path d="M20 0V72" stroke="#d9c9ff" stroke-width="2"/>
+        <g stroke="#2a0f55" stroke-width="3" stroke-linecap="round" fill="none">
+          <path d="M10 80L0 70M10 86L-2 88M11 92L2 104M30 80L40 70M30 86L42 88M29 92L38 104"/>
+        </g>
+        <circle cx="20" cy="86" r="12" fill="#2a0f55"/>
+        <circle cx="16" cy="83" r="2" fill="#ffd23f"/>
+        <circle cx="24" cy="83" r="2" fill="#ffd23f"/>
+      </symbol>
+    </svg>
+    <div class="mq">
+      <span id="mq"></span>
+    </div>
+    <header>
+      <img class="lg s" alt="PIVOT" src="img/logo-amarela.png">
+      <nav id="nav">
+        <a data-pg="inicio" class="on">Início</a>
+        <a data-pg="cursos">Cursos</a>
+        <a data-pg="sobre">Sobre nós</a>
+      </nav>
+      <div id="auth"></div>
+    </header>
+    <div class="wrap">
+      <div class="pg on" id="p-inicio">
+        <div class="news" id="news">
+          <div class="sl s0 on">
+            <img class="sg" src="img/logo-amarela.png" alt="PIVOT">
+            <svg class="gx dc" viewBox="0 0 160 40" style="right:24px;bottom:34px;width:150px;color:var(--y)">
+              <use href="#chev"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 100 100" style="left:56%;top:22px;opacity:.5;color:#fff;--ac:var(--b);width:80px">
+              <use href="#cap"/>
+            </svg>
+            <small>NOVIDADE · MATRÍCULAS</small>
+            <h3>Matrículas abertas</h3>
+            <p>Garanta sua vaga nas turmas de 2026 e dê o seu próximo passo rumo ao mercado de trabalho.</p>
+            <button data-pg="cursos">Ver cursos ↗</button>
+          </div>
+          <div class="sl s1">
+            <div class="gx pt dc">
+              <i></i>
+            </div>
+            <svg class="gx dc" viewBox="0 0 64 10" style="left:28px;top:22px;width:64px">
+              <g fill="#ff82c0">
+                <circle cx="5" cy="5" r="4"/>
+                <circle cx="23" cy="5" r="4"/>
+                <circle cx="41" cy="5" r="4"/>
+                <circle cx="59" cy="5" r="4"/>
+              </g>
+            </svg>
+            <img class="hl" src="img/logo-rosa.png" alt="PIVOT">
+            <h3>Outubro Rosa</h3>
+            <p>Mês de Prevenção ao Câncer de Mama</p>
+            <svg class="gx rb pk" viewBox="0 0 200 300" style="left:52%;margin-left:-110px;top:50%;margin-top:-165px;width:220px">
+              <use href="#rib2"/>
+            </svg>
+            <div class="gx tg dc">
+              dê a você
+              <b>um toque</b>
+              de cuidado.
+            </div>
+            <svg class="gx dc" viewBox="0 0 100 100" style="left:36%;top:14%;color:#ff82c0;--ac:#fff;width:46px">
+              <use href="#bulb"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 100 100" style="left:36%;bottom:6%;color:#ff9fd0;--ac:#fff;width:56px">
+              <use href="#book"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 100 100" style="right:4%;top:16%;color:#fff;--ac:#ff6fb5;width:50px">
+              <use href="#case"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 160 40" style="right:24px;bottom:30px;width:110px;color:#fff">
+              <use href="#chev"/>
+            </svg>
+          </div>
+          <div class="sl s2">
+            <svg class="gx dc" viewBox="-4 0 48 120" style="right:41%;top:0;width:34px">
+              <use href="#sp"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 120 56" style="right:34%;top:20px;width:82px">
+              <use href="#bt"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 120 56" style="right:11%;top:112px;width:58px;transform:scaleX(-1)">
+              <use href="#bt"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 140 120" style="right:27%;top:104px;width:92px;transform:rotate(14deg)">
+              <use href="#ht"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 40 40" style="right:31%;top:45%;width:24px;color:#ffd23f">
+              <use href="#star"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 40 40" style="right:5%;top:42%;width:18px;color:#fff">
+              <use href="#star"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 40 40" style="right:42%;top:58%;width:16px;color:#fff">
+              <use href="#star"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 40 40" style="right:17%;top:46%;width:28px;color:#ffd23f">
+              <use href="#star"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 120 160" style="right:3%;bottom:14px;width:130px">
+              <use href="#gh"/>
+            </svg>
+            <svg class="gx pk" viewBox="0 0 200 170" style="right:18%;bottom:0;width:170px">
+              <use href="#pump"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 200 170" style="right:35%;bottom:0;width:100px">
+              <use href="#pump"/>
+            </svg>
+            <small>EVENTO · 31/10</small>
+            <h3><img class="hl" src="img/logo-laranja.png" alt="PIVOT">Halloween</h3>
+            <p>Noite de Talentos com fantasias, show de projetos dos alunos e muita diversão no campus de Jundiaí.</p>
+          </div>
+          <div class="sl s3">
+            <svg class="gx" viewBox="0 0 80 80" style="right:20%;top:50%;margin-top:-60px;width:110px;color:var(--b);--ac:var(--y)">
+              <use href="#tile"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 100 100" style="right:8%;top:22%;color:var(--b);--ac:var(--y);width:100px">
+              <use href="#laptop"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 100 100" style="right:6%;bottom:44px;color:var(--b);--ac:var(--y);width:104px">
+              <use href="#case"/>
+            </svg>
+            <small>NOVIDADE · CURSOS</small>
+            <h3>Novos cursos técnicos</h3>
+            <p>Turmas novas em tecnologia, logística e gestão, com aulas 100% práticas.</p>
+            <button data-pg="cursos">Conhecer ↗</button>
+          </div>
+          <div class="sl s4">
+            <svg class="gx" viewBox="0 0 100 100" style="right:9%;top:50%;margin-top:-70px;color:var(--b);--ac:var(--y);width:190px">
+              <use href="#book"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 100 100" style="right:4%;top:22px;color:var(--y);--ac:var(--b);width:52px">
+              <use href="#bulb"/>
+            </svg>
+            <svg class="gx dc" viewBox="0 0 160 40" style="right:24px;bottom:34px;width:140px;color:var(--y)">
+              <use href="#chev"/>
+            </svg>
+            <small>EVENTO · JUNDIAÍ</small>
+            <h3>Dia de portas abertas</h3>
+            <p>Venha conhecer a PIVOT, a estrutura e os professores. Em breve, novas datas.</p>
+            <button data-pg="sobre">Sobre nós ↗</button>
+          </div>
+          <div class="dots" id="dots">
+            <i class="on"></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+        <div class="pills">
+          <span>TÉCNICA</span>
+          <span>PRÁTICA</span>
+          <span>EXPERIÊNCIA</span>
+          <span>RESULTADO</span>
+        </div>
+        <div class="band">
+          <svg viewBox="0 0 80 80" style="color:var(--b);--ac:var(--y)">
+            <use href="#tile"/>
+          </svg>
+          <svg viewBox="0 0 160 40" style="color:var(--b)">
+            <use href="#chev"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+            <use href="#case"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+            <use href="#book"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+            <use href="#laptop"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+            <use href="#cap"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:#fff">
+            <use href="#bulb"/>
+          </svg>
+          <svg viewBox="0 0 160 40" style="color:var(--b)">
+            <use href="#chev"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+            <use href="#chart"/>
+          </svg>
+          <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+            <use href="#cert"/>
+          </svg>
+        </div>
+        <div class="grid" style="margin-bottom:16px">
+          <div class="card">
+            <div class="ic">
+              ✓
+            </div>
+            <h3>Certificados garantidos</h3>
+            <p>Todo aluno que conclui o curso recebe certificado de conclusão para comprovar a sua formação.</p>
+          </div>
+          <div class="card">
+            <div class="ic">
+              ★
+            </div>
+            <h3>Foco na prática</h3>
+            <p>Técnica, prática, experiência e resultado em cada aula, com projetos reais.</p>
+          </div>
+          <div class="card">
+            <div class="ic">
+              ↗
+            </div>
+            <h3>Rumo ao mercado</h3>
+            <p>Da escola ao mercado de trabalho, com apoio para o seu primeiro passo na carreira.</p>
+          </div>
+        </div>
+        <section class="sec b">
+          <h2>Parcerias</h2>
+          <div class="logos">
+            <div>
+              EMPRESA PARCEIRA 01
+            </div>
+            <div>
+              EMPRESA PARCEIRA 02
+            </div>
+            <div>
+              EMPRESA PARCEIRA 03
+            </div>
+            <div>
+              EMPRESA PARCEIRA 04
+            </div>
+            <div>
+              EMPRESA PARCEIRA 05
+            </div>
+            <div>
+              EMPRESA PARCEIRA 06
+            </div>
+          </div>
+        </section>
+        <section class="sec w">
+          <h2>Notícias</h2>
+          <div class="grid">
+            <article class="ncard"><div class="th">RANKING</div><div class="bd"><time>08 out 2026</time><h3>PIVOT está no top 10 das melhores instituições profissionalizantes do estado</h3><p>Levantamento do Guia Educação Profissional 2026 destacou a escola de Jundiaí em qualidade de ensino e empregabilidade.</p></div></article>
+            <article class="ncard"><div class="th">EMPREGABILIDADE</div><div class="bd"><time>02 out 2026</time><h3>92% dos alunos de Logística são contratados em até 60 dias</h3><p>Pesquisa interna acompanhou a primeira turma formada e mostrou forte demanda das empresas da região.</p></div></article>
+            <article class="ncard"><div class="th">ALUNOS</div><div class="bd"><time>26 set 2026</time><h3>Aluna de Desenvolvimento Web conquista vaga em empresa de tecnologia</h3><p>Mariana S. começou como estagiária meses depois de concluir o curso e já lidera um projeto.</p></div></article>
+            <article class="ncard"><div class="th">ESTRUTURA</div><div class="bd"><time>19 set 2026</time><h3>PIVOT inaugura novo laboratório de informática com 40 computadores</h3><p>O espaço será usado nos cursos de tecnologia, dados e design gráfico.</p></div></article>
+            <article class="ncard"><div class="th">EVENTO</div><div class="bd"><time>12 set 2026</time><h3>Feira de Empregos PIVOT reúne 30 empresas e mais de 400 vagas</h3><p>Alunos e ex-alunos participaram de entrevistas, palestras e oficinas de currículo.</p></div></article>
+            <article class="ncard"><div class="th">PRÊMIO</div><div class="bd"><time>05 set 2026</time><h3>PIVOT recebe selo de excelência em formação para o trabalho</h3><p>O reconhecimento destacou o foco em aulas práticas e o acompanhamento de carreira.</p></div></article>
+          </div>
+        </section>
+        <section class="sec y">
+          <h2>Vagas para alunos e ex-alunos</h2>
+          <div class="vg">
+            <div>
+              <b>Auxiliar de Logística</b>
+              <span>Empresa Parceira 01 · Jundiaí</span>
+            </div>
+            <em>NOVA</em>
+          </div>
+          <div class="vg">
+            <div>
+              <b>Desenvolvedor(a) Júnior</b>
+              <span>Empresa Parceira 02 · Híbrido</span>
+            </div>
+            <em>NOVA</em>
+          </div>
+          <div class="vg">
+            <div>
+              <b>Assistente Administrativo</b>
+              <span>Empresa Parceira 03 · Várzea Paulista</span>
+            </div>
+            <em>ABERTA</em>
+          </div>
+          <div class="vg">
+            <div>
+              <b>Analista de Marketing Digital</b>
+              <span>Empresa Parceira 04 · Campinas</span>
+            </div>
+            <em>ABERTA</em>
+          </div>
+          <div class="vg">
+            <div>
+              <b>Eletricista Predial</b>
+              <span>Empresa Parceira 05 · Jundiaí</span>
+            </div>
+            <em>ABERTA</em>
+          </div>
+        </section>
+        <section class="sec">
+          <h2>Quem estudou, indica</h2>
+          <div class="grid">
+            <div class="qt">
+              <p>“As aulas práticas fizeram toda a diferença. Em dois meses eu já estava trabalhando na área.”</p>
+              <span>Carlos M. · Logística</span>
+            </div>
+            <div class="qt">
+              <p>“Mudei de carreira aos 35 anos e a PIVOT me deu segurança para recomeçar.”</p>
+              <span>Fernanda L. · Análise de Dados</span>
+            </div>
+            <div class="qt">
+              <p>“Os professores acompanham de perto e ajudam até no currículo e na entrevista.”</p>
+              <span>Rafael T. · Desenvolvimento Web</span>
+            </div>
+          </div>
+          <p class="note" style="margin-top:14px">* Notícias, vagas e depoimentos são fictícios e ilustrativos.</p>
+        </section>
+      </div>
+      <div class="pg" id="p-cursos">
+        <section class="sec w">
+          <h2>Nossos cursos</h2>
+          <p>Formação profissional para o seu próximo passo. Clique em “Saber mais” para ver habilidades, aulas, professores e áreas de atuação, ou fale com a PVT IA se estiver em dúvida.</p>
+          <div class="grid" id="courses"></div>
+        </section>
+      </div>
+      <div class="pg" id="p-curso">
+        <div id="cv"></div>
+      </div>
+      <div class="pg" id="p-sobre">
+        <section class="ab-hero">
+          <img src="img/logo-amarela.png" alt="PIVOT">
+          <h1>Da escola ao <em>mercado de trabalho.</em></h1>
+          <p>Somos uma escola profissionalizante de Jundiaí, criada em 2026 para transformar vontade de aprender em oportunidade real de trabalho.</p>
+          <svg class="g2 dc" viewBox="0 0 100 100" style="right:6%;top:8%;color:var(--y);--ac:var(--b);width:200px">
+            <use href="#book"/>
+          </svg>
+          <svg class="g2" viewBox="0 0 80 80" style="right:26%;bottom:10%;width:84px;color:#fff;--ac:var(--b)">
+            <use href="#tile"/>
+          </svg>
+          <svg class="g2 dc" viewBox="0 0 100 100" style="right:8%;bottom:8%;opacity:.9;color:#fff;--ac:var(--b);width:100px">
+            <use href="#cert"/>
+          </svg>
+          <svg class="g2 dc" viewBox="0 0 160 40" style="right:34%;top:10%;width:130px;color:var(--y)">
+            <use href="#chev"/>
+          </svg>
+          <svg class="g2 dc" viewBox="0 0 100 100" style="right:44%;bottom:30%;color:var(--y);--ac:var(--b);width:50px">
+            <use href="#bulb"/>
+          </svg>
+          <svg class="g2 dc" viewBox="0 0 100 100" style="right:3%;top:52%;opacity:.55;color:#fff;--ac:var(--b);width:90px">
+            <use href="#cap"/>
+          </svg>
+        </section>
+        <div class="two">
+          <section class="sec">
+            <h2>Quem somos</h2>
+            <p>A PIVOT nasceu em 2026, em Jundiaí, com uma ideia simples: o caminho entre estudar e trabalhar não precisa ser longo nem confuso. Reunimos cursos técnicos, aulas práticas e contato com empresas para que cada aluno saia daqui pronto para o próximo passo.</p>
+            <p>Somos uma escola para quem quer mudar de carreira, conquistar o primeiro emprego ou crescer na profissão que já tem. Aqui, ninguém aprende sozinho: a gente aprende fazendo, junto.</p>
+            <div class="tags">
+              <span>FUNDADA EM 2026</span>
+              <span>JUNDIAÍ · SP</span>
+              <span>CURSOS TÉCNICOS</span>
+              <span>AULAS PRÁTICAS</span>
+            </div>
+          </section>
+          <section class="sec y">
+            <h2>Nosso slogan</h2>
+            <p class="slg">Da escola ao mercado de trabalho.</p>
+            <p>Resume o que fazemos: acompanhar o aluno do primeiro dia de aula até a primeira oportunidade, com técnica, prática, experiência e resultado.</p>
+            <svg viewBox="0 0 160 40" style="width:120px;color:var(--b)">
+              <use href="#chev"/>
+            </svg>
+          </section>
+        </div>
+        <section class="sec w">
+          <h2>Por que existimos</h2>
+          <p style="max-width:760px">Muita gente tem vontade de trabalhar e crescer, mas falta o caminho até a primeira oportunidade. A PIVOT existe para encurtar essa distância: ensinar o que o mercado realmente pede, na prática, e abrir portas para o próximo passo.</p>
+          <div class="grid">
+            <div class="card">
+              <div class="ic">
+                1
+              </div>
+              <h3>Acesso</h3>
+              <p>Formação profissional acessível, para quem está começando ou recomeçando.</p>
+            </div>
+            <div class="card">
+              <div class="ic">
+                2
+              </div>
+              <h3>Prática</h3>
+              <p>Aprender fazendo: laboratórios, projetos reais e professores que vivem o mercado.</p>
+            </div>
+            <div class="card">
+              <div class="ic">
+                3
+              </div>
+              <h3>Oportunidade</h3>
+              <p>Parcerias com empresas, mural de vagas e orientação de carreira.</p>
+            </div>
+          </div>
+        </section>
+        <div class="two">
+          <section class="sec b">
+            <h2>Nossa marca</h2>
+            <p>O nome PIVOT vem de “pivotar”: mudar de direção com estratégia. A seta que sai de dentro do O representa esse movimento, o avanço e o próximo passo.</p>
+            <p>As letras grossas e arredondadas passam solidez e acolhimento. Setas e ícones de trabalho e aprendizado formam o nosso universo visual e lembram o mundo do trabalho, a conexão e a variedade de caminhos.</p>
+            <div class="pills" style="justify-content:flex-start;margin:6px 0 0">
+              <span>TÉCNICA</span>
+              <span>PRÁTICA</span>
+              <span>EXPERIÊNCIA</span>
+              <span>RESULTADO</span>
+            </div>
+          </section>
+          <section class="sec lg">
+            <img src="img/logo-amarela.png" alt="PIVOT" style="width:min(300px,80%);height:auto">
+            <div class="gfx">
+              <svg viewBox="0 0 80 80" style="color:var(--b);--ac:var(--y)">
+                <use href="#tile"/>
+              </svg>
+              <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+                <use href="#case"/>
+              </svg>
+              <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+                <use href="#book"/>
+              </svg>
+              <svg viewBox="0 0 100 100" style="color:var(--b);--ac:var(--y)">
+                <use href="#cap"/>
+              </svg>
+              <svg viewBox="0 0 100 100" style="color:var(--y);--ac:var(--b)">
+                <use href="#bulb"/>
+              </svg>
+            </div>
+          </section>
+        </div>
+        <section class="sec">
+          <h2>Nossas cores</h2>
+          <div class="swg">
+            <div class="sw">
+              <i style="background:#1f5cff"></i>
+              <b>Azul PIVOT</b>
+              <span>#1F5CFF</span>
+              <p>Confiança, tecnologia e futuro.</p>
+            </div>
+            <div class="sw">
+              <i style="background:#f2e60f"></i>
+              <b>Amarelo PIVOT</b>
+              <span>#F2E60F</span>
+              <p>Energia, otimismo e oportunidade.</p>
+            </div>
+            <div class="sw">
+              <i style="background:#fff;box-shadow:inset 0 0 0 2px #d7e2ff"></i>
+              <b>Branco</b>
+              <span>#FFFFFF</span>
+              <p>Clareza, respeito e espaço para crescer.</p>
+            </div>
+          </div>
+          <p style="margin-top:16px">Em datas especiais, a logo ganha cores temáticas, como o rosa do Outubro Rosa e o laranja do Halloween.</p>
+          <div class="lgs">
+            <img src="img/logo-rosa.png" alt="PIVOT rosa">
+            <img src="img/logo-laranja.png" alt="PIVOT laranja">
+          </div>
+        </section>
+        <section class="sec y">
+          <h2>Missão, visão e valores</h2>
+          <div class="grid">
+            <div class="card" style="background:#fff">
+              <h3>Missão</h3>
+              <p>Transformar vidas por meio da educação profissional, com cursos técnicos acessíveis, aulas práticas e acompanhamento próximo de cada aluno até a certificação.</p>
+            </div>
+            <div class="card" style="background:#fff">
+              <h3>Visão</h3>
+              <p>Ser referência em formação profissional em Jundiaí e região, reconhecida por formar profissionais competentes, confiantes e prontos para o próximo passo.</p>
+            </div>
+            <div class="card" style="background:#fff">
+              <h3>Valores</h3>
+              <p>Compromisso com o aluno, ética, inovação, trabalho em equipe, respeito à diversidade e foco constante em resultado.</p>
+            </div>
+          </div>
+        </section>
+        <section class="ab-cta">
+          <svg viewBox="0 0 160 40" style="color:var(--y);width:110px">
+            <use href="#chev"/>
+          </svg>
+          <h2>Da escola ao mercado de trabalho.</h2>
+          <p>Ficou com dúvida sobre qual curso escolher? Converse com a PVT IA.</p>
+          <button class="y" data-chat="abrir">Falar com a PVT IA ↗</button>
+        </section>
+      </div>
+      <div class="pg" id="p-conta">
+        <div id="acct"></div>
+      </div>
+    </div>
+    <footer class="ft">
+      <div class="ftw">
+        <div>
+          <img src="img/logo-amarela.png" alt="PIVOT" style="height:46px;width:auto">
+          <p class="ftp">Da escola ao mercado de trabalho.</p>
+          <p class="ftn">Jundiaí · SP · desde 2026<br>contato@pivot.exemplo · (11) 4000-0000</p>
+        </div>
+        <div>
+          <b class="fth">SIGA A PIVOT</b>
+          <div class="soc">
+            <a href="#" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 100 100" style="--ac:var(--y)"><use href="#wa"/></svg></a>
+            <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 100 100"><use href="#ig"/></svg></a>
+            <a href="#" aria-label="Twitter" title="Twitter (X)"><svg viewBox="0 0 100 100"><use href="#xx"/></svg></a>
+            <a href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 100 100" style="--ac:var(--y)"><use href="#yt"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="ftl">
+        PIVOT · CURSOS TÉCNICOS · HABILIDADES REAIS · MAIS OPORTUNIDADES
+      </div>
+    </footer>
+    <div id="toast"></div>
+    <div id="fl">
+      Fale com a PVT IA
+    </div>
+    <button id="fab" aria-label="Abrir PVT IA"></button>
+    <div id="box">
+      <div class="ch">
+        <span class="who"><span class="av"><svg viewBox="0 0 100 110"><use href="#bot"/></svg></span><span><b>PVT IA</b><small>Assistente virtual da PIVOT</small></span></span>
+        <button id="x">✕</button>
+      </div>
+      <div class="msgs" id="msgs"></div>
+      <div class="row">
+        <input id="inp" placeholder="Escreva sua mensagem…" autocomplete="off">
+        <button id="send">Enviar</button>
+      </div>
+    </div>
+    <div class="md" id="md">
+      <div class="mb">
+        <button class="xx" id="mx">✕</button>
+        <h2 id="mt"></h2>
+        <div id="mc"></div>
+        <p id="mm" class="note"></p>
+      </div>
+    </div>
+
+    <script src="js/utilitarios.js"></script>
+    <script src="js/dados.js"></script>
+    <script src="js/avatar.js"></script>
+    <script src="js/armazenamento.js"></script>
+    <script src="js/autenticacao.js"></script>
+    <script src="js/assistente.js"></script>
+    <script src="js/interface.js"></script>
+    <script src="js/principal.js"></script>
+  </body>
+</html>
